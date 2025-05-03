@@ -1,12 +1,37 @@
-# React + Vite
+# Greek Learners - (Work-Mode-On)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Greek Learners is an educational platform aimed at guiding students through a structured learning path to prepare effectively before applying to companies. Our seminars and guided lectures provide personalized support and strategic direction based on real-world requirements.
 
-Currently, two official plugins are available:
+## 🚀 What We Do
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Help students understand what to learn and when to learn it
+- Offer structured learning paths tailored to tech career goals
+- Conduct seminars and guided lectures with actionable steps
+- Focus on practical knowledge before company applications
 
-## Expanding the ESLint configuration
+## 🧠 Why Greek Learners?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Unlike generic courses, Greek Learners focuses on **readiness**, not just content. We offer:
+- Mentored sessions to break down tech careers
+- Roadmaps designed for students and beginners
+- An evolving platform — more features coming soon!
+
+## 💡 Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: ExpressJS
+- **Bundler**: Vite
+- **Version Control**: Git & GitHub
+
+## 📌 How to Use
+
+```bash
+# Clone the repository
+git clone https://github.com/anshkumar26/Greek-Learners.git
+
+# Install dependencies
+cd greek-web
+npm install
+
+# Start the development server
+npm run dev
