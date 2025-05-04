@@ -1,3 +1,4 @@
+import "../designs/ScrollVelocity.css";
 import { useRef, useLayoutEffect, useState } from "react";
 import {
   motion,
@@ -8,7 +9,7 @@ import {
   useVelocity,
   useAnimationFrame,
 } from "framer-motion";
-import "../designs/ScrollVelocity.css";
+
 
 function useElementWidth(ref) {
   const [width, setWidth] = useState(0);
