@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate()
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -14,12 +16,12 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center p-4 relative overflow-hidden">
       {/* Decorative Greek patterns */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-5">
+      {/* <div className="absolute top-0 left-0 w-full h-full opacity-5">
         <div className="absolute top-10 left-10 text-8xl">Α</div>
         <div className="absolute top-20 right-20 text-9xl">Ω</div>
         <div className="absolute bottom-20 left-20 text-7xl">Φ</div>
         <div className="absolute bottom-10 right-10 text-8xl">Σ</div>
-      </div>
+      </div> */}
 
       {/* Main login card */}
       <div className="w-full max-w-md relative">
@@ -29,11 +31,11 @@ export default function Login() {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400"></div>
             <div className="flex justify-center mb-4">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-3xl font-bold text-indigo-600">Α</span>
+                <span className="text-3xl font-bold text-indigo-600">GL</span>
               </div>
             </div>
-            <h1 className="text-3xl font-bold text-white mb-2">Welcome Back</h1>
-            <p className="text-indigo-100">Continue your learning journey</p>
+            <h1 className="text-3xl font-bold text-white mb-2">Login</h1>
+            {/* <p className="text-indigo-100">Continue your learning journey</p> */}
             
             {/* Decorative Greek key pattern */}
             <div className="absolute bottom-0 left-0 w-full h-2 bg-white opacity-20"></div>
@@ -128,19 +130,14 @@ export default function Login() {
             {/* Sign up link */}
             <p className="text-center mt-8 text-sm text-gray-600">
               Don't have an account?{' '}
-              <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors">
-                Sign up for free
+              <a onClick={()=>navigate('/signup')} href="#" className="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors">
+                Sign up
               </a>
             </p>
           </div>
 
           {/* Footer decoration */}
           <div className="h-2 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400"></div>
-        </div>
-
-        {/* Greek quote at bottom */}
-        <div className="text-center mt-6 text-gray-600 text-sm italic">
-          "γνῶθι σεαυτόν" - Know thyself
         </div>
       </div>
     </div>
